@@ -3,11 +3,15 @@
 class Solution:
     def findTwoElement( self,arr, n): 
         # code here
-        # m = len(arr)+1
-        # total = (n*(n+1))//2
+    
+        total = (n*(n+1))//2
         hs = {}
-        # s = sum(arr)
+        s = sum(arr)
         missin = 0
+        h = set(arr)
+        v = sum(h)
+        
+        missin = total-v
         
         
         for i in arr:
@@ -19,9 +23,9 @@ class Solution:
         for i in hs:
             if hs[i]>1:
                 rep = i
-        for i in range(1, len(arr)+1):
-            if i not in hs:
-                missin += i
+        # for i in range(1,len(arr)+1):
+        #     if i not in hs:
+        #         missin += i
         return [rep,missin]
         
         
