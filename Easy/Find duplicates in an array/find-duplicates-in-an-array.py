@@ -18,13 +18,7 @@ class Solution:
             return [-1]
         else:
             return duplicates_list
-
-
-
-            
-
-
-
+    	    
 
 
 #{ 
