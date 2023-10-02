@@ -2,6 +2,7 @@
 class Solution:
     def findKRotation(self,arr,  n):
         # code here
+	    // first method
         count=1
         a = sorted(arr)
         if a == arr:
@@ -10,6 +11,10 @@ class Solution:
             if arr[i+1]<arr[i]:
                 return count
             count+=1
+    // seocnd method
+        a = sorted(arr)
+	return arr.index(a[0])
+	    
         
 
 
